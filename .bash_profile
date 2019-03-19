@@ -6,6 +6,9 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home
 export PATH=${PATH}:$JAVA_HOME/bin
 
+export EDITOR='code --wait'
+export GIT_EDITOR='code --wait'
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/julioaugusto/google-cloud-sdk/path.bash.inc' ]; then . '/Users/julioaugusto/google-cloud-sdk/path.bash.inc'; fi
 
