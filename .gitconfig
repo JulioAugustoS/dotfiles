@@ -1,5 +1,43 @@
 [user]
-	email = julio@lapse.com.br
 	name = Julio Augusto
+	email = julio@lapse.com.br
+
+[color]
+	ui = auto 
+
+[push]
+	default = current
+
 [pull]
 	rebase = true
+
+[alias]
+	# Short status output
+	s = status -s 
+
+	# Common operations
+	co = checkout
+	st = status
+	ci = commit
+	di = diff
+	dc = diff --cached
+	cp = cherry-pick
+	cpn = cherry-pick --no-commit
+	aa = add --all
+	pr = pull --rebase
+	ri = rebase --interactive --autosquash --root
+	rc = rebase --continue
+	rh = reset --hard
+	fa = fetch --all
+	amend = commit --amend
+	squash = commit --amend --no-edit
+	sh = !git add --all && git stash push
+	sp = stash pop
+
+# Colored logs
+	l  = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(yellow)%h%C(reset) %C(green)(%ar)%C(reset) %C(red)%d%C(reset) %C(white)%s%C(reset) - %C(ul italic cyan)%an%C(reset)'
+	ll = log --graph --abbrev-commit --decorate --format=format:'%C(yellow)%h%C(reset) %C(red)%d%C(reset) %C(white)%s%C(reset) - %C(un italic cyan)%an (%ae)%C(reset)%n %C(cyan)%aD%C(reset) %C(green)(%ar)%C(reset)%n'
+	la = !git l --all
+	lla = !git ll --all
+	r = !git l -10
+	ra = !git r --all
