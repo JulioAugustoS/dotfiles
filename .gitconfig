@@ -1,0 +1,5 @@
+[user]
+	email = julio@lapse.com.br
+	name = Julio Augusto
+[pull]
+	rebase = true
