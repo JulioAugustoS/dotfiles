@@ -1,15 +1,12 @@
 [user]
 	name = Julio Augusto
-	email = julio@lapse.com.br
+	email = julioams@icloud.com
 
 [color]
 	ui = auto 
 
 [push]
 	default = current
-
-[pull]
-	rebase = true
 
 [alias]
 	# Short status output
